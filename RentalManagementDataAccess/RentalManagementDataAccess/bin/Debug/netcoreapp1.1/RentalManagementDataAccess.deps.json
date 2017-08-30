@@ -1,0 +1,53 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v1.1",
+    "signature": "c1268bddc4c038e279fb89212fd1a94e4700e498"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v1.1": {
+      "rentalmanagementdataaccess/1.0.0": {
+        "dependencies": {
+          "JeenTechnology.RentalManagement.RentalManagementModels": "1.0.0"
+        },
+        "runtime": {
+          "RentalManagementDataAccess.dll": {}
+        }
+      },
+      "jeentechnology.rentalmanagement.rentalmanagementmodels/1.0.0": {
+        "dependencies": {
+          "System.ComponentModel.Primitives": "4.3.0"
+        },
+        "runtime": {
+          "lib/netcoreapp1.1/RentalManagementModels.dll": {}
+        }
+      },
+      "system.componentmodel.primitives/4.3.0": {
+        "runtime": {
+          "lib/netstandard1.0/System.ComponentModel.Primitives.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "rentalmanagementdataaccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "jeentechnology.rentalmanagement.rentalmanagementmodels/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h2eKWAmIiD7e8is3UYRUB2pmVZP0N8iMkIyAb5oCgwxYfJQX00rQTPYLJVAqTIOZplzDqggsIIlDNLk0/WtFVA==",
+      "path": "jeentechnology.rentalmanagement.rentalmanagementmodels/1.0.0",
+      "hashPath": "jeentechnology.rentalmanagement.rentalmanagementmodels.1.0.0.nupkg.sha512"
+    },
+    "system.componentmodel.primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
+      "path": "system.componentmodel.primitives/4.3.0",
+      "hashPath": "system.componentmodel.primitives.4.3.0.nupkg.sha512"
+    }
+  }
+}
