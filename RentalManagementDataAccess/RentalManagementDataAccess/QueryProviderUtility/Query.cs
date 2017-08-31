@@ -25,7 +25,7 @@ namespace RentalManagementDataAccess.QueryProviderUtility
             this.expression = Expression.Constant(this);
         }
 
-        public Query(QueryProvider queryProvider, Expression expression)
+        public Query(QueryProvider provider, Expression expression)
         {
             if (provider == null)
                 throw new ArgumentException("provider");
