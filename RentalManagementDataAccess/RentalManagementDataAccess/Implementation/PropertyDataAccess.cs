@@ -22,12 +22,12 @@ namespace RentalManagementDataAccess.Implementation
 
         public async Task<List<Property>> GetAll()
         {
-            return _dataStore.ReadAll().Result;
+            return await _dataStore.ReadAll();
         }
 
         public async Task<Property> GetById(int Id)
         {
-            throw new NotImplementedException();
+            return await _dataStore.Read(Id);
         }
 
         public async Task<IQueryable<Property>> GetByQuery(Query<Property> query)

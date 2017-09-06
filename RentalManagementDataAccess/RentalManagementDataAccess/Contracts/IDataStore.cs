@@ -6,7 +6,7 @@ using RentalManagementModels;
 
 namespace RentalManagementDataAccess.Contracts
 {
-    internal interface IDataStore<T> where T : IModel
+    public interface IDataStore<T> where T : IModel
     {
         Task<T> Create(T item);
 

@@ -26,5 +26,11 @@ namespace RentalManagementDataAccess.Contracts
         /// Uses a query object to try and limit data.
         /// </summary>
         Task<IQueryable<T>> GetByQuery(Query<T> query);
+
+
+        /// <summary>
+        /// Saves the model, persisting it to a data store
+        /// </summary>
+        Task<T> Save(T item);
     }
 }
