@@ -11,17 +11,26 @@ namespace RentalManagementDataAccess.Implementation
 {
     public class PropertyDataAccess : IRentalManagementDataAccess<Property>
     {
-        public Task<List<Property>> GetAll()
+
+        public PropertyDataAccess(IDataStore<Property> dataStore)
+        {
+            _dataStore = dataStore;
+        }
+
+        private readonly IDataStore<Property> _dataStore;
+
+
+        public async Task<List<Property>> GetAll()
+        {
+            return _dataStore.ReadAll().Result;
+        }
+
+        public async Task<Property> GetById(int Id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Property> GetById(int Id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IQueryable<Property>> GetByQuery(Query<Property> query)
+        public async Task<IQueryable<Property>> GetByQuery(Query<Property> query)
         {
             throw new NotImplementedException();
         }
